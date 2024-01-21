@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Message Board
+  for message in messages
+    div(class="test")   
+      p #{message.text} 
+      p #{message.user}
+      p #{message.added}
+  a(href="/new") New

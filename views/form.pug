@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  form( method="POST" action="/new") 
+    label(for="messageText") Message 
+    br 
+    input(type="text" name="messageText")
+    br
+    label(for="messaegAuthor") Name 
+    br 
+    input(tpye="text" name="messageAuthor")
+    button(type="submit") Submit 
